@@ -38,7 +38,7 @@ Qt Designer is a tool for designing and building graphical user interfaces (GUIs
 The database comprises 11 tables containing information about tenants, leasing managers, help providers, leases, insurance, and bills. Data types used include varchar, bigint, int, enum, and date. Foreign key integrity constraints are maintained in the database.
 
 ### Visualization
-We offer three visualization graphs to determine the number of help providers in each category, the gender distribution of tenants, and the number of service requests by tenants in specific categories. These visualizations help users understand the database and its associated entities. SQL queries used for these visualizations include group by clauses, count(), and joins.
+The project three visualization graphs to determine the number of help providers in each category, the gender distribution of tenants, and the number of service requests by tenants in specific categories. These visualizations help users understand the database and its associated entities. SQL queries used for these visualizations include group by clauses, count(), and joins.
 
 ### Main File
 - **Main.py**: The primary file for running the application.
@@ -57,7 +57,7 @@ We offer three visualization graphs to determine the number of help providers in
   - Change the directory to the path where the Main.py file exists.
 - **Run the following command on the terminal**:
    - `python3 Main.py` (For the main program)
-   - `python3 visualization.py` (For the extra credit part)
+   - `python3 visualization.py` 
 
 ### Specific Examples
 - For user type Tenant, use credentials for users with user_id starting with 'T'.
@@ -91,9 +91,3 @@ We offer three visualization graphs to determine the number of help providers in
 22. `SELECT problem, count(*) FROM service INNER JOIN user ON service.tenant_id=user.user_id GROUP BY problem`
 23. `DELETE FROM tenantcarddetails WHERE tenantcarddetails_id=%s`
 24. `SELECT * FROM service WHERE tenant_id=%s`
-
-
-[Watch the Project Video](https://drive.google.com/file/d/1EWKpqPmgDahX9P_IPtrZcxwGfsB6Q4yR/view?usp=sharing)
-
----
-**Note**: Please replace the placeholders with actual image and video links and ensure the formatting is accurate in the actual README file.
